@@ -16,6 +16,7 @@ function displayList(){
 };
 
 function displayTotal(){
+  console.log(list);
   for(i=0; i<list.length;i++){
       total = total + list[i].price;
     }
@@ -23,14 +24,16 @@ function displayTotal(){
 };
 
 //Function to add Name and Price to the exisiting array, does not work yet.
-function addName(){
-  var a = document.getElementById('a');
-  if (a.value !=''){
-  list.name.push(a)}
+function addItem(){
+  var a = document.getElementById('a').value;
+  var b = document.getElementById('b').value*1;
+  var newItems = {name: a, price: b};
+  if (a !=''){
+  list.push(newItems)}
 };
 
-function addPrice(){
+/*function addPrice(){
   var b = document.getElementById('b');
   if (b.value !=''){
   list.price.push(b)};
-};
+};*/
