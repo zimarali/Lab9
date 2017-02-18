@@ -16,7 +16,7 @@ function displayList(){
 };
 
 function displayTotal(){
-  console.log(list);
+  console.log(list);//console.log used to inspect list
   for(i=0; i<list.length;i++){
       total = total + list[i].price;
     }
