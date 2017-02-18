@@ -22,6 +22,7 @@ function displayTotal(){
     document.getElementById("array").innerHTML = "Total "+"$"+ total;
 };
 
+//Function to add Name and Price to the exisiting array.
 function addName(){
   var a = document.getElementById('a');
   if (a.value !=''){
