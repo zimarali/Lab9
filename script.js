@@ -23,7 +23,7 @@ function displayTotal(){
     document.getElementById("array").innerHTML = "Total "+"$"+ total;
 };
 
-//Function to add Name and Price to the exisiting array, does not work yet.
+//Function to add Name and Price to the exisiting array, adds a as string and adds b as number due to *1
 function addItem(){
   var a = document.getElementById('a').value;
   var b = document.getElementById('b').value*1;
@@ -32,6 +32,7 @@ function addItem(){
   list.push(newItems)}
 };
 
+//Old function
 /*function addPrice(){
   var b = document.getElementById('b');
   if (b.value !=''){
